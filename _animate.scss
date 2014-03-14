@@ -1,0 +1,241 @@
+// Animate.css
+// ================================================
+
+@import "animate/attention-seekers";
+@import "animate/bouncing";
+@import "animate/fading";
+@import "animate/flippers";
+@import "animate/simple";
+@import "animate/sliders";
+
+@mixin animation($animation-type:null) {
+
+  // Checking for Attention Seekers
+  @if $animation-type == bounce {
+      @include bounce();
+  } @elseif $animation-type == pulse {
+      @include pulse();
+  } @elseif $animation-type == rubber-band {
+      @include rubber-band();
+  } @elseif $animation-type == shake {
+      @include shake();
+  } @elseif $animation-type == wobble {
+      @include wobble();
+  }
+
+  // Checking for Bouncing Entrances
+  @elseif $animation-type == bounce-in {
+      @include bounce-in();
+  } @elseif $animation-type == bounce-in-down {
+      @include bounce-in-down();
+  } @elseif $animation-type == bounce-in-left {
+      @include bounce-in-left();
+  } @elseif $animation-type == bounce-in-right {
+      @include bounce-in-right();
+  } @elseif $animation-type == bounce-in-up {
+      @include bounce-in-up();
+  }
+
+  // Checking for Bouncing Exits
+  @elseif $animation-type == bounce-out {
+      @include bounce-out();
+  } @elseif $animation-type == bounce-out-down {
+      @include bounce-out-down();
+  } @elseif $animation-type == bounce-out-left {
+      @include bounce-out-left();
+  } @elseif $animation-type == bounce-out-right {
+      @include bounce-out-right();
+  } @elseif $animation-type == bounce-out-up {
+      @include bounce-out-up();
+  }
+
+  // Checking for Fading Entrances
+  @elseif $animation-type == fade-in {
+      @include fade-in();
+  } @elseif $animation-type == fade-in-down {
+      @include fade-in-down();
+  } @elseif $animation-type == fade-in-down-big {
+      @include fade-in-down-big();
+  } @elseif $animation-type == fade-in-left {
+      @include fade-in-left();
+  } @elseif $animation-type == fade-in-left-big {
+      @include fade-in-left-big();
+  } @elseif $animation-type == fade-in-right {
+      @include fade-in-right();
+  } @elseif $animation-type == fade-in-right-big {
+      @include fade-in-right-big();
+  } @elseif $animation-type == fade-in-up {
+      @include fade-in-up();
+  } @elseif $animation-type == fade-in-up-big {
+      @include fade-in-up-big();
+  }
+
+  // Checking for Fading Exits
+  @elseif $animation-type == fade-out {
+      @include fade-out();
+  } @elseif $animation-type == fade-out-down {
+      @include fade-out-down();
+  } @elseif $animation-type == fade-out-down-big {
+      @include fade-out-down-big();
+  } @elseif $animation-type == fade-out-left {
+      @include fade-out-left();
+  } @elseif $animation-type == fade-out-left-big {
+      @include fade-out-left-big();
+  } @elseif $animation-type == fade-out-right {
+      @include fade-out-right();
+  } @elseif $animation-type == fade-out-right-big {
+      @include fade-out-right-big();
+  } @elseif $animation-type == fade-out-up {
+      @include fade-out-up();
+  } @elseif $animation-type == fade-out-up-big {
+      @include fade-out-up-big();
+  }
+
+  // Checking for Flippers
+  @elseif $animation-type == flip-in-x {
+      @include flip-in-x();
+  }
+
+  // Checking for Sliders
+  @elseif $animation-type == slide-in-down {
+      @include slide-in-down();
+  } @elseif $animation-type == slide-in-left {
+      @include slide-in-left();
+  } @elseif $animation-type == slide-in-right {
+      @include slide-in-right();
+  } @elseif $animation-type == slide-out-left {
+      @include slide-out-left();
+  } @elseif $animation-type == slide-out-right {
+      @include slide-out-right();
+  } @elseif $animation-type == slide-out-up {
+      @include slide-out-up();
+  }
+
+}
+
+@mixin animate($animation-type:null, $animation-duration: 1s, $animation-delay: null) {
+  -webkit-animation-duration: $animation-duration;
+  -moz-animation-duration: $animation-duration;
+  -o-animation-duration: $animation-duration;
+  animation-duration: $animation-duration;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  @if $animation-delay {
+    -webkit-animation-delay: $animation-delay;
+    -moz-animation-delay: $animation-delay;
+    -o-animation-delay: $animation-delay;
+    animation-delay: $animation-delay;
+  }
+
+  // Animating Attention Seekers
+  @if $animation-type == bounce {
+      @include animation-call(bounce);
+  } @elseif $animation-type == pulse {
+      @include animation-call(pulse);
+  } @elseif $animation-type == rubber-band {
+      @include animation-call(rubberBand);
+  } @elseif $animation-type == shake {
+      @include animation-call(shake);
+  } @elseif $animation-type == wobble {
+      @include animation-call(wobble);
+  }
+
+  // Animating Bouncing Entrances
+  @elseif $animation-type == bounce-in {
+      @include animation-call(bounceIn);
+  } @elseif $animation-type == bounce-in-down {
+      @include animation-call(bounceInDown);
+  } @elseif $animation-type == bounce-in-left {
+      @include animation-call(bounceInLeft);
+  } @elseif $animation-type == bounce-in-right {
+      @include animation-call(bounceInRight);
+  } @elseif $animation-type == bounce-in-up {
+      @include animation-call(bounceInUp);
+  }
+
+  // Animating Bouncing Exits
+  @elseif $animation-type == bounce-out {
+      @include animation-call(bounceOut);
+  } @elseif $animation-type == bounce-out-down {
+      @include animation-call(bounceOutDown);
+  } @elseif $animation-type == bounce-out-left {
+      @include animation-call(bounceOutLeft);
+  } @elseif $animation-type == bounce-out-right {
+      @include animation-call(bounceOutRight);
+  } @elseif $animation-type == bounce-out-up {
+      @include animation-call(bounceOutUp);
+  }
+
+  // Animating Fading Entrances
+  @elseif $animation-type == fade-in {
+      @include animation-call(fadeIn);
+  } @elseif $animation-type == fade-in-down {
+      @include animation-call(fadeInDown);
+  } @elseif $animation-type == fade-in-down-big {
+      @include animation-call(fadeInDownBig);
+  } @elseif $animation-type == fade-in-left {
+      @include animation-call(fadeInLeft);
+  } @elseif $animation-type == fade-in-left-big {
+      @include animation-call(fadeInLeftBig);
+  } @elseif $animation-type == fade-in-right {
+      @include animation-call(fadeInRight);
+  } @elseif $animation-type == fade-in-right-big {
+      @include animation-call(fadeInRightBig);
+  } @elseif $animation-type == fade-in-up {
+      @include animation-call(fadeInUp);
+  } @elseif $animation-type == fade-in-up-big {
+      @include animation-call(fadeInUpBig);
+  }
+
+  // Animating Fading Exits
+  @elseif $animation-type == fade-out {
+      @include animation-call(fadeOut);
+  } @elseif $animation-type == fade-out-down {
+      @include animation-call(fadeOutDown);
+  } @elseif $animation-type == fade-out-down-big {
+      @include animation-call(fadeOutDownBig);
+  } @elseif $animation-type == fade-out-left {
+      @include animation-call(fadeOutLeft);
+  } @elseif $animation-type == fade-out-left-big {
+      @include animation-call(fadeOutLeftBig);
+  } @elseif $animation-type == fade-out-right {
+      @include animation-call(fadeOutRight);
+  } @elseif $animation-type == fade-out-right-big {
+      @include animation-call(fadeOutRightBig);
+  } @elseif $animation-type == fade-out-up {
+      @include animation-call(fadeOutUp);
+  } @elseif $animation-type == fade-out-up-big {
+      @include animation-call(fadeOutUpBig);
+  }
+
+  // Animating Flippers
+  @elseif $animation-type == flip-in-x {
+      @include animation-call(flipInX);
+  }
+
+  // Animating Sliders
+  @elseif $animation-type == slide-in-down {
+      @include animation-call(slideInDown);
+  } @elseif $animation-type == slide-in-left {
+      @include animation-call(slideInLeft);
+  } @elseif $animation-type == slide-in-right {
+      @include animation-call(slideInRight);
+  } @elseif $animation-type == slide-out-left {
+      @include animation-call(slideOutLeft);
+  } @elseif $animation-type == slide-out-right {
+      @include animation-call(slideOutRight);
+  } @elseif $animation-type == slide-out-up {
+      @include animation-call(slideOutUp);
+  }
+
+}
+
+@mixin animation-call($animation-name) {
+  -webkit-animation-name: $animation-name;
+  -moz-animation-name: $animation-name;
+  -o-animation-name: $animation-name;
+  animation-name: $animation-name;
+}
