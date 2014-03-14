@@ -1,0 +1,5 @@
+{
+  "name": "Animate(d).sass",
+  "description": "Animate(d).sass is a strealined, opionated port of Dan Eden's wonderful Animate.css. It includes the ability to customize duration and delay on all effects as well as a simple animation mixin for one-off animations.",
+  "tags": ["sass", "mixins", "animate", "animated", "animation", "css3", "mixins"]
+}

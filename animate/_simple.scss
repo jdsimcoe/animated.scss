@@ -1,7 +1,0 @@
-// Simple Animations
-// ================================================
-
-@mixin animate-simple($css-element:color, $animation-duration:300ms, $animation-function:ease-in-out) {
-  -webkit-transition: $css-element $animation-duration $animation-function;
-  transition: $css-element $animation-duration $animation-function;
-}

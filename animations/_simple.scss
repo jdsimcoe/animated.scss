@@ -1,0 +1,9 @@
+// Simple Animations
+// ================================================
+
+@mixin animate-simple($css-attribute:color, $animation-duration:300ms, $animation-timing-function:ease-in-out) {
+  -webkit-transition: $css-attribute $animation-duration $animation-timing-function;
+  -moz-transition: $css-attribute $animation-duration $animation-timing-functio;
+  -o-transition: $css-attribute $animation-duration $animation-timing-functio;
+  transition: $css-attribute $animation-duration $animation-timing-functio;
+}

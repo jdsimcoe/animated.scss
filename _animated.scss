@@ -1,12 +1,12 @@
 // Animate.css
 // ================================================
 
-@import "animate/attention-seekers";
-@import "animate/bouncing";
-@import "animate/fading";
-@import "animate/flippers";
-@import "animate/simple";
-@import "animate/sliders";
+@import "animations/attention-seekers";
+@import "animations/bouncing";
+@import "animations/fading";
+@import "animations/flippers";
+@import "animations/simple";
+@import "animations/sliders";
 
 @mixin animation($animation-type:null) {
 
