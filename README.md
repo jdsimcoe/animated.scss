@@ -1,4 +1,4 @@
-# Animated.sass
+# Animate(d).sass
 *A streamlined Sass port (featuring the best) of Dan Eden's Animate.css*
 
 Here's the deal: [Dan Eden's](http://daneden.me) [Animate.css](http://daneden.github.io/animate.css/) is a wonderful little library. Some of the animations are a little "too much" for my taste and many of the projects I work on. I know there are Sass ports out there ([animate.sass](https://github.com/adamstac/animate.sass) and [this updated fork](https://github.com/polikin/animate.sass)), but I wanted a simpler port to Sass that I could build on.
