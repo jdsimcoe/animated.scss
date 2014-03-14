@@ -26,7 +26,6 @@ nav {
 .masthead {
   @include animate(fade-in, 1s, 500ms);
 }
-
 ```
 
 From this we can see that we have our `nav` element coming in using the `fade-in-down` animation with a duration of 1 second. The `.masthead` also fades in with a 1 second duration, but the effect is delayed in its start by 500 milliseconds.
@@ -49,7 +48,7 @@ The `animate` mixin must be called within an element and it has three attributes
 
 ## Animations
 
-Here is a list of all animations included in this library. Reference [Dan Eden's original project](http://daneden.github.io/animate.css/) for animation examples. Use the strings below in Sass in place of the `animation-name` in the `animation` and `animate` mixins :
+Here is a list of all animations included in this library. Reference [Dan Eden's original project](http://daneden.github.io/animate.css/) for animation examples. Use the strings below in Sass in place of the `animation-name` in the `animation` and `animate` mixins:
 
 ### Attention Seekers
 
@@ -135,7 +134,6 @@ a {
     @include animate-simple(border-color, 200ms, ease-in);
   }
 }
-
 ```
 
 In this code, you can see that there are two animations being called. The first call animates the `<a>` element on hover with the default CSS attribute `color` with an animation-duration of `300ms` and the default timing function: `ease-in-out`. The second animation animates the link's `border-color` with a duration of `200ms` and the animation timing function: `ease-in`.
