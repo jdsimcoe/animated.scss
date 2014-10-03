@@ -13,7 +13,7 @@ Here is the fruit of this work.
 
 Here is an example Sass file:
 
-```
+```scss
 @import "animated";
 
 @include animation(fade-in-down);
