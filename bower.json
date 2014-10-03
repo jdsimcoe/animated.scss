@@ -13,7 +13,9 @@
     "sache",
     "animation",
     "css",
-    "animation"
+    "css3",
+    "animate",
+    "mixins"
   ],
   "license": "MIT",
   "ignore": [
