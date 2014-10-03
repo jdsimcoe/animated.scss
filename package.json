@@ -1,0 +1,28 @@
+{
+  "name": "animated.sass",
+  "description": "A streamlined Sass port (featuring the best) of Dan Eden's Animate.css",
+  "version": "0.3.1",
+  "keywords": [
+    "sass",
+    "scss",
+    "sache",
+    "animation",
+    "css",
+    "css3",
+    "animate",
+    "mixins"
+  ],
+  "homepage": "https://github.com/simko-io/animated.sass",
+  "author": "Jonathan Simcoe <jonathan@simko.io>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simko-io/animated.sass"
+  },
+  "bugs": {
+    "url": "https://github.com/simko-io/animated.sass/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/simko-io/animated.sass/blob/master/LICENSE"
+  }
+}
