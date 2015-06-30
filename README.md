@@ -7,14 +7,14 @@ Here is the fruit of this work.
 
 ## Usage
 
-1. Use `@include "animated";` to bring the library into your Sass project.
+1. Use `@include "animated/animated";` to bring the library into your Sass project.
 2. Use the `animation mixin globally for every animation you want to include: `@include animation(animation-name);`. This is important as it brings in the appropriate `keyframe` animation for use in your elements. (_Note: the keyframe animation needs to be global in your Sass, and not under any speficic selector, class, ID, or other mixin_).
 3. Use the `animate` mixin within any element to setup the animation: `@include animate(animation-name, animation-duration, animation-delay);`.
 
 Here is an example Sass file:
 
 ```scss
-@import "animated";
+@import "animated/animated";
 
 @include animation(fade-in-down);
 @include animation(fade-in);
